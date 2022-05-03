@@ -24,7 +24,7 @@ public class MarcaResource {
     @Transactional
     public Response incluir(Marca marca) {
         Marca.persist(marca);
-        return Response.ok(marca).status(201).build();
+        return Response.ok(marca).status(201).  build();
     }
 
     @PUT
