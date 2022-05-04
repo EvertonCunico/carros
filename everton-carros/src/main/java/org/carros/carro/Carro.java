@@ -28,8 +28,7 @@ public class Carro extends PanacheEntityBase {
     private Marca marca;
 
     @Column
-    @Enumerated(EnumType.STRING)
-    private CarroCor cor;
+    private String cor;
 
     @Column
     private Integer ano;
