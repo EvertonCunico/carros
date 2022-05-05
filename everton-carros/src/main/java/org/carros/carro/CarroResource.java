@@ -1,5 +1,7 @@
 package org.carros.carro;
 
+import org.carros.shared.IResource;
+
 import javax.inject.Inject;
 import javax.transaction.Transactional;
 import javax.ws.rs.*;
@@ -10,7 +12,7 @@ import java.util.List;
 @Path("/carros")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
-public class CarroResource {
+public class CarroResource implements IResource<Carro> {
 
     @Inject
     private CarroController controller;

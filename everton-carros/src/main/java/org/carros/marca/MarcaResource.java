@@ -1,5 +1,7 @@
 package org.carros.marca;
 
+import org.carros.shared.IResource;
+
 import javax.inject.Inject;
 import javax.transaction.Transactional;
 import javax.ws.rs.*;
@@ -10,7 +12,7 @@ import java.util.List;
 @Path("/marcas")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
-public class MarcaResource {
+public class MarcaResource implements IResource<Marca> {
 
     @Inject
     private MarcaController controller;
